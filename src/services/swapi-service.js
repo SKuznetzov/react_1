@@ -1,4 +1,6 @@
 export default class SwapiService {
+    
+    _apiBase = 'https://swapi.dev/api'
 
     async getResource() {
         const res = await fetch(url)
