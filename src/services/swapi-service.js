@@ -2,8 +2,8 @@ export default class SwapiService {
     
     _apiBase = 'https://swapi.dev/api'
 
-    async getResource() {
-        const res = await fetch(url)
+    async getResource(url) {
+        const res = await fetch(`${this._apiBase}${url}`)
 
         if (!res.ok) {
             throw new Error(`Could not fetch ${url}` + `,received ${res.status}`)
@@ -11,9 +11,9 @@ export default class SwapiService {
         return await res.json()
     }
     getAllPeople() {
-        return this.getResource(`https://swapi.dev/api/people/`)
+        return this.getResource(`/people/`)
     }
     getPerson(id) {
-        return this.getResource(`https://swapi.dev/api/people/${id}/`)
+        return this.getResource(`/people/${id}/`)
     }
 }
