@@ -17,3 +17,8 @@ export default class SwapiService {
         return this.getResource(`/people/${id}/`)
     }
 }
+
+const swapi = SwapiService()
+swapi.getAllPeople().then((body)=>{
+    console.log(body)
+})
