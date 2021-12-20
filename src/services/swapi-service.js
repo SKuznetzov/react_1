@@ -21,6 +21,9 @@ export default class SwapiService {
         const res = await this.getResource(`/planets/`)
         return res.results
     }
+    getPlanet(id) {
+        return this.getResource(`/planets/${id}/`)
+    }
 }
 
 const swapi = new SwapiService()
