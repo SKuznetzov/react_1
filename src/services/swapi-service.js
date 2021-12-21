@@ -28,6 +28,9 @@ export default class SwapiService {
         const res = await this.getResource(`/starships/`)
         return res.results
     }
+    getStarships(id) {
+        return this.getResource(`/starships/${id}/`)
+    }
 }
 
 const swapi = new SwapiService()
