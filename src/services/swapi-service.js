@@ -24,6 +24,10 @@ export default class SwapiService {
     getPlanet(id) {
         return this.getResource(`/planets/${id}/`)
     }
+    async getAllStarships() {
+        const res = await this.getResource(`/starships/`)
+        return res.results
+    }
 }
 
 const swapi = new SwapiService()
