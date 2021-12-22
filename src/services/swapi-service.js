@@ -32,10 +32,3 @@ export default class SwapiService {
         return this.getResource(`/starships/${id}/`)
     }
 }
-
-const swapi = new SwapiService()
-swapi.getAllPeople().then((people)=>{
-    people.forEach((p)=>{
-        console.log(p.name)
-    })
-})
