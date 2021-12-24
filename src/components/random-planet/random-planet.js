@@ -6,6 +6,7 @@ export default class RandomPlanet extends Component {
 
     swapiService = new SwapiService()
     state = {
+        id: null,
         name:null,
         population: null,
         rotationPeriod: null,
@@ -18,10 +19,12 @@ export default class RandomPlanet extends Component {
     }
 
     updatePlanet() {
+        const id = Math.floor(Math.random()*25) + 2
       this.swapiService
-      .getPlanet(7)
+      .getPlanet(id)
       .then((planet)=>{
         this.setState({
+            id,
             name: planet.name,
             population: planet.population,
             rotationPeriod: planet.rotation_period,
@@ -30,7 +33,7 @@ export default class RandomPlanet extends Component {
       })
     }
     render() {
-        const {planet:{id,name,population,rotationPeriod,diameter} }= this.state;
+        const {id,name,population,rotationPeriod,diameter}= this.state;
         return (
             <div className="random-planet jumbotron rounded">
             <img className="planet-image"
