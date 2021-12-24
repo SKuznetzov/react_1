@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
+import SwapiService from '../../services/swapi-service'
 import './random-planet.css'
 
 export default class RandomPlanet extends Component {
 
+    swapiService = new SwapiService()
     state = {
         name:null,
         population: null,
@@ -10,8 +12,22 @@ export default class RandomPlanet extends Component {
         diameter: null
     }
 
-    updatePlanet() {
+    constructor() {
+        super();
+        this.updatePlanet();
+    }
 
+    updatePlanet() {
+      this.swapiService
+      .getPlanet(7)
+      .then((planet)=>{
+        this.setState({
+            name: planet.name,
+            population: planet.population,
+            rotationPeriod: planet.rotation_period,
+            diameter: planet.diameter
+        })
+      })
     }
     render() {
         const {planet:{id,name,population,rotationPeriod,diameter} }= this.state;
