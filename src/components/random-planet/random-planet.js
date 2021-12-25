@@ -18,6 +18,10 @@ export default class RandomPlanet extends Component {
         this.updatePlanet();
     }
 
+    onPlanetLoaded =(planet) =>{
+        this.setState({planet})
+    }
+
     updatePlanet() {
         const id = Math.floor(Math.random()*25) + 2
       this.swapiService
