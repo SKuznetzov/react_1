@@ -58,4 +58,13 @@ export default class SwapiService {
             cargoCapacity: starship.cargoCapacity
         }  
     }
+    _transformPerson(person) {
+        return {
+            id: this._extractId(person),
+            name: person.name,
+            gender: person.gender,
+            birthYear: person.birthYear,
+            eyeColor: person.eyeColor
+        }    
+    }
 }
