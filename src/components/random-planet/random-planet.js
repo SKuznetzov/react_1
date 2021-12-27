@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import SwapiService from '../../services/swapi-service'
 import './random-planet.css'
-
+import Spinner from '../spinner'
 export default class RandomPlanet extends Component {
 
     swapiService = new SwapiService()
