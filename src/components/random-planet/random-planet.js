@@ -26,7 +26,10 @@ export default class RandomPlanet extends Component {
       .then(this.onPlanetLoaded)
     }
     render() {
-        const { planet: {id,name,population,rotationPeriod,diameter } }= this.state;
+        const { planet: {id,name,population,rotationPeriod,diameter },loading }= this.state;
+        if (loading) {
+            return <Spinner />
+        }
         return (
         <div className="random-planet jumbotron rounded">
             <img className="planet-image"
