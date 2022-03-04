@@ -36,7 +36,6 @@ export default class RandomPlanet extends Component {
         <div className="random-planet jumbotron rounded">
             {spinner}
             {content}
-            <PlanetView planet ={planet} />
         </div>
         )
     }
