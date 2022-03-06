@@ -21,12 +21,16 @@ export default class RandomPlanet extends Component {
             loading: false
         })
     }
+    onError = (err) => {
+        
+    }
 
     updatePlanet() {
         const id = Math.floor(Math.random()*25) + 2
       this.swapiService
       .getPlanet(id)
       .then(this.onPlanetLoaded)
+      .catch(this.onError)
     }
     render() {
         const { planet,loading }= this.state;
