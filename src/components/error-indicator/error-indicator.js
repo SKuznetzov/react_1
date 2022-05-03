@@ -11,6 +11,6 @@ const ErrorIndicator = () => {
     )
 }
 
-export default error-indicator
+export default ErrorIndicator
 
 
