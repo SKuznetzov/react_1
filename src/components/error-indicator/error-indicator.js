@@ -1,11 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class error-indicator extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        )
-    }
+const error-indicator = () => {
+    return (
+        <div>
+            
+        </div>
+    )
 }
+
+export default error-indicator
+
+
