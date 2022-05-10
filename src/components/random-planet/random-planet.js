@@ -43,6 +43,7 @@ export default class RandomPlanet extends Component {
         const spinner = loading ? <Spinner /> : <PlanetView planet={planet} />;
         return (
         <div className="random-planet jumbotron rounded">
+            {errorMessage}
             {spinner}
         </div>
         )
