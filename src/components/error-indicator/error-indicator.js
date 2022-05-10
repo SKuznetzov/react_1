@@ -3,11 +3,11 @@ import 'error-indicator.css'
 
 const ErrorIndicator = () => {
     return (
-        <div>
-            <span className="error-indicator">
+        <div className="error-indicator">
+                <span className="boom">BOOM!!!</span>
                 <span>something has gone terribly wrong</span>
                 <span>(but we already sent droids to fix it)</span>
-            </span>
+            
         </div>
     )
 }
