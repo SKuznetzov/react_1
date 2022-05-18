@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import './item-list'
 export default class ItemList extends Component {
+
+    state = {
+        peopleList: null
+    }
     render() {
         return (
            <ul className="item-list list-group">
