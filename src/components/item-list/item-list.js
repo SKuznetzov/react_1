@@ -5,6 +5,9 @@ export default class ItemList extends Component {
     state = {
         peopleList: null
     }
+    componentDidMount() {
+        
+    }
     render() {
         return (
            <ul className="item-list list-group">
