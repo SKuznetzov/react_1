@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 import './item-list'
+import SwapiService from '../../services/swapi-service'
 export default class ItemList extends Component {
 
+    swapiService = new SwapiService()
+    
     state = {
         peopleList: null
     }
     componentDidMount() {
-        
+
     }
     render() {
         return (
