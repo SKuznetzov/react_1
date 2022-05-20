@@ -4,12 +4,17 @@ import SwapiService from '../../services/swapi-service'
 export default class ItemList extends Component {
 
     swapiService = new SwapiService()
-    
+
     state = {
         peopleList: null
     }
     componentDidMount() {
-
+        this.swapiService
+        .then((peopleList) => {
+            this.setState({
+                peopleList
+            })
+        })
     }
     render() {
         return (
