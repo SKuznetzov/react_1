@@ -38,7 +38,7 @@ export default class SwapiService {
         const idRegExp = /\/([0-9]*)\/$/;
         return item.url.match(idRegExp)[1];
     }
-    _transformPlanet(planet) {
+    _transformPlanet = (planet) => {
         return {
             id: this._extractId(planet),
             name: planet.name,
