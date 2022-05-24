@@ -47,7 +47,7 @@ export default class SwapiService {
             diameter: planet.diameter
         }
     }
-    _transformStarship(starship) {
+    _transformStarship = (starship) => {
         return {
             id: this._extractId(starship),
             name: starship.name,
