@@ -60,7 +60,7 @@ export default class SwapiService {
             cargoCapacity: starship.cargoCapacity
         }  
     }
-    _transformPerson(person) {
+    _transformPerson = (person) => {
         return {
             id: this._extractId(person),
             name: person.name,
