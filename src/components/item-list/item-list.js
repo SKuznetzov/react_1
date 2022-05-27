@@ -18,6 +18,17 @@ export default class ItemList extends Component {
             })
         })
     }
+    renderItem(arr) {
+        return arr.map(({id, name}) => {
+            return (
+                <li className="list-group-item"
+                    key={id}
+                    onClick={() => this.propsOnItemSelected(person.id)}>
+                    {person.name}
+                    </li>
+            )
+        })
+    }
     render() {
 
         const { peopleList } = this.state;
