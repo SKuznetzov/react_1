@@ -18,7 +18,7 @@ export default class ItemList extends Component {
             })
         })
     }
-    renderItem(arr) {
+    renderItems(arr) {
         return arr.map(({id, name}) => {
             return (
                 <li className="list-group-item"
