@@ -8,6 +8,10 @@ import './app.css'
 
 
 const App = () => {
+
+    state = {
+        selectedPerson: null
+    }
     return (
         <div>
             <Header />
