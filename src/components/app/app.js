@@ -12,6 +12,12 @@ const App = () => {
     state = {
         selectedPerson: null
     }
+
+    onPersonSelected = (id) => {
+        this.setState({
+            selectedPerson: id
+        })
+    }
     return (
         <div>
             <Header />
