@@ -8,6 +8,10 @@ export default class PersonDetails extends Component {
         person: null
     }
 
+    componentDidMount() {
+        this.updatePerson()
+    }
+
     updatePerson() {
         const { personId } = this.props
         if (personId) {
