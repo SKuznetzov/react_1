@@ -32,7 +32,7 @@ export default class PersonDetails extends Component {
         const { id, name, gender, birthYear, eyeColor } = this.state.person
         return (
             <div className="person-details card">
-            <img className="person-image" src="https://starwars-visualguide.com/#/characters/3" alt=""/>
+            <img className="person-image" src={`https://starwars-visualguide.com/#/characters/${id}.jpg`} alt="character"/>
             <div className="card-body">
                 <h4>R2-D2</h4>
                 <ul className="list-group list-group-flush">
