@@ -46,7 +46,7 @@ export default class PersonDetails extends Component {
                     </li>
                     <li className="list-group-item">
                         <span className="term">Eye Color</span>
-                        <span>red</span>
+                        <span>{eyeColor}</span>
                     </li>
                 </ul>
              </div>  
