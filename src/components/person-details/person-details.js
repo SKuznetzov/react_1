@@ -40,7 +40,7 @@ export default class PersonDetails extends Component {
             <div className="person-details card">
             <img className="person-image" src={`https://starwars-visualguide.com/#/characters/${id}.jpg`} alt="character"/>
             <div className="card-body">
-                <h4>{name}</h4>
+        <h4>{name}{this.props.personId}</h4>
                 <ul className="list-group list-group-flush">
                     <li className="list-group-item">
                         <span className="term">Gender</span>
