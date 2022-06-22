@@ -18,6 +18,9 @@ class App extends Component {
             selectedPerson: id
         })
     }
+    componentDidCatch() {
+        this.setState({hasError: true})
+    }
     render(){
     return (
         <div>
