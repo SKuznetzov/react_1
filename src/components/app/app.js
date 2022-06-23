@@ -3,7 +3,7 @@ import Header from '../header'
 import RandomPlanet from '../random-planet'
 import ItemList from '../item-list'
 import PersonDetails from '../person-details'
-
+import ErrorIndicator from '../error-indicator'
 import './app.css'
 
 
@@ -24,7 +24,7 @@ class App extends Component {
     render(){
 
         if ( this.state.hasError) {
-            return 'Error'
+            return <ErrorIndicator />
         }
     return (
         <div>
