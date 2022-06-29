@@ -10,7 +10,8 @@ import './app.css'
 class App extends Component {
 
     state = {
-        selectedPerson: null
+        selectedPerson: null,
+        hasError: false
     }
 
 
