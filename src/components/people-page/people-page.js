@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ItemList from '../item-list'
 
 export default class PeoplePage extends Component {
     state = {
