@@ -11,8 +11,13 @@ export default class PeoplePage extends Component {
     }
     render() {
         return (
-            <div>
-                <p>People page</p>
+            <div className="row md2">
+                <div className="col-md-6">
+                    <ItemList onItemSelected ={this.onPersonSelected}/>
+                </div>
+                <div className="col-md-6">
+                    <PersonDetails personId={this.state.selectedPerson} />
+                </div>
             </div>
         )
     }
