@@ -13,11 +13,7 @@ class App extends Component {
         selectedPerson: null
     }
 
-    onPersonSelected = (id) => {
-        this.setState({
-            selectedPerson: id
-        })
-    }
+
     componentDidCatch() {
         this.setState({hasError: true})
     }
