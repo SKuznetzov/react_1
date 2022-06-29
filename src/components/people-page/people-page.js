@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ItemList from '../item-list'
-
+import PersonDetails from '../person-details'
 export default class PeoplePage extends Component {
     state = {
         selectedPerson: 3
