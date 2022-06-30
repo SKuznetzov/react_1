@@ -3,6 +3,7 @@ import Header from '../header'
 import RandomPlanet from '../random-planet'
 import ErrorIndicator from '../error-indicator'
 import './app.css'
+import PeoplePage from '../people-page/people-page'
 
 
 class App extends Component {
@@ -25,6 +26,7 @@ class App extends Component {
         <div>
             <Header />
             <RandomPlanet />
+            <PeoplePage />
         </div>
     )
 }}
