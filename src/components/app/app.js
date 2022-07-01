@@ -9,7 +9,6 @@ import PeoplePage from '../people-page/people-page'
 class App extends Component {
 
     state = {
-        selectedPerson: null,
         hasError: false
     }
 
