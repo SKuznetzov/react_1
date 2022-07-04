@@ -4,7 +4,8 @@ import PersonDetails from '../person-details/person-details'
 import './people-page.css'
 export default class PeoplePage extends Component {
     state = {
-        selectedPerson: 3
+        selectedPerson: 3,
+        hasError: false
     }
     onPersonSelected = (selectPerson) => {
         this.setState({
