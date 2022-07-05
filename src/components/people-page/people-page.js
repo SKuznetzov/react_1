@@ -7,6 +7,11 @@ export default class PeoplePage extends Component {
         selectedPerson: 3,
         hasError: false
     }
+    componentDidCatch() {
+        this.setState({
+            hasError: true
+        })
+    }
     onPersonSelected = (selectPerson) => {
         this.setState({
             selectedPerson
