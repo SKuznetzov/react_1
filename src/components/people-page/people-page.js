@@ -8,7 +8,8 @@ export default class PeoplePage extends Component {
         selectedPerson: 3,
         hasError: false
     }
-    componentDidCatch() {
+    componentDidCatch(error, info) {
+        debugger
         this.setState({
             hasError: true
         })
