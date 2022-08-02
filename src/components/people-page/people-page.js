@@ -6,9 +6,9 @@ export default class PeoplePage extends Component {
     state = {
         selectedPerson: 3
     }
-    onPersonSelected = (id) => {
+    onPersonSelected = (selectPerson) => {
         this.setState({
-            selectedPerson: id
+            selectedPerson
         })
     }
     render() {
